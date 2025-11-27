@@ -279,3 +279,36 @@ $ git commit -m "final last merge"
 
 JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (master)
 $
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (master)
+$ git add code.txt
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (master)
+$ git commit -m "Added code"
+[master 2a4c293] Added code
+ 1 file changed, 281 insertions(+)
+ create mode 100644 code.txt
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (master)
+$ git branch -M main
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (main)
+$ git remote add origin https://github.com/kavankumar6723/Mychandu.git
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (main)
+$ git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 34, done.
+Counting objects: 100% (34/34), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (32/32), done.
+Writing objects: 100% (34/34), 4.82 KiB | 705.00 KiB/s, done.
+Total 34 (delta 11), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (11/11), done.
+To https://github.com/kavankumar6723/Mychandu.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (main)
+$ git push -u origin main
+branch 'main' set up to track 'origin/main'.
+Everything up-to-date
