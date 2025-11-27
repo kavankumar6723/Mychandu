@@ -1,0 +1,281 @@
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ
+$ git init
+Initialized empty Git repository in C:/Users/JAVA-14/Desktop/GODZ/.git/
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+        script.js
+        style.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (master)
+$ git add .
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (master)
+$ git commit -m "Start Point"
+[master (root-commit) 04e5ac5] Start Point
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+ create mode 100644 script.js
+ create mode 100644 style.css
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (master)
+$ git branch html
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (master)
+$ git swtich html
+git: 'swtich' is not a git command. See 'git --help'.
+
+The most similar command is
+        switch
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (master)
+$ git switch html
+Switched to branch 'html'
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (html)
+$ git add index.html
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (html)
+$ git commit -m "html structure"
+[html 3fb865f] html structure
+ 1 file changed, 9 insertions(+)
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (html)
+$ git switch master
+Switched to branch 'master'
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (master)
+$ git add index.html
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (master)
+$ git commit -m "html structure"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (master)
+$ git add index.html
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (master)
+$ git commit -m "html structure"
+[master 8060d28] html structure
+ 1 file changed, 9 insertions(+)
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (master)
+$ git branch css
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (master)
+$ git switch css
+Switched to branch 'css'
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (css)
+$ git add style.css
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (css)
+$ git commit -m "css basic"
+[css 2e7d20f] css basic
+ 1 file changed, 7 insertions(+)
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (css)
+$ git switch main
+fatal: invalid reference: main
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (css)
+$ git switch master
+Switched to branch 'master'
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (master)
+$ git commit -m "css basic1"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   style.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (master)
+$ git add style.css
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (master)
+$ git commit -m "css basic1"
+[master d2c1d7e] css basic1
+ 1 file changed, 7 insertions(+)
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (master)
+$ git branch js
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (master)
+$ git switch js
+Switched to branch 'js'
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (js)
+$ git add index.html script.js
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (js)
+$ git commit -m "JS basic"
+[js 957f545] JS basic
+ 2 files changed, 9 insertions(+)
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (js)
+$ git switch master
+Switched to branch 'master'
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (master)
+$ git add index.html script.js
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (master)
+$ git commit -m "change html and js"
+[master 7904a2e] change html and js
+ 2 files changed, 12 insertions(+), 2 deletions(-)
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (master)
+$ git switch html
+Switched to branch 'html'
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (html)
+$ git merge css
+Auto-merging index.html
+CONFLICT (content): Merge conflict in index.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (html|MERGING)
+$ git commit -m "merge of css to html"
+U       index.html
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (html|MERGING)
+$ git status
+On branch html
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+        modified:   style.css
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   index.html
+
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (html|MERGING)
+$ git add index.html
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (html|MERGING)
+$ git commit -m "Resolve merge conflict in index.html - merged css into html"
+[html 0d919c9] Resolve merge conflict in index.html - merged css into html
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (html)
+$ git merge css
+Already up to date.
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (html)
+$ git commit -m "merge of css to html"
+On branch html
+nothing to commit, working tree clean
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (html)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (html)
+$ git add .
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (html)
+$ git commit -m "Final code for html and css"
+On branch html
+nothing to commit, working tree clean
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (html)
+$ git merge js
+Auto-merging index.html
+CONFLICT (content): Merge conflict in index.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (html|MERGING)
+$ git switch master
+fatal: cannot switch branch while merging
+Consider "git merge --quit" or "git worktree add".
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (html|MERGING)
+$ git switch html
+fatal: cannot switch branch while merging
+Consider "git merge --quit" or "git worktree add".
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (html|MERGING)
+$ git add .
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (html|MERGING)
+$ git switch master
+fatal: cannot switch branch while merging
+Consider "git merge --quit" or "git worktree add".
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (html|MERGING)
+$ git status
+On branch html
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+        modified:   index.html
+        modified:   script.js
+
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (html|MERGING)
+$ git commit -m "Merge branch 'css' into html — resolve conflicts"
+[html a260854] Merge branch 'css' into html — resolve conflicts
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (html)
+$ git switch master
+Switched to branch 'master'
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (master)
+$ git add .
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (master)
+$ git commit -m "merge master to js"
+On branch master
+nothing to commit, working tree clean
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (master)
+$ git merge html
+Auto-merging index.html
+CONFLICT (content): Merge conflict in index.html
+Auto-merging script.js
+CONFLICT (content): Merge conflict in script.js
+Automatic merge failed; fix conflicts and then commit the result.
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (master|MERGING)
+$ git add .
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (master|MERGING)
+$ git commit =m "final last merge"
+fatal: cannot do a partial commit during a merge.
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (master|MERGING)
+$ git commit -m "final last merge"
+[master 7666b74] final last merge
+
+JAVA-14@DESKTOP-R5A4FBV MINGW64 ~/Desktop/GODZ (master)
+$
